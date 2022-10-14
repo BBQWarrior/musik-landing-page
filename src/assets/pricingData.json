@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Basic",
+        "price": "100",
+        "seatNr": 1,
+        "accessWifi": false,
+        "accessFoodWater": false,
+        "color": "black"
+    },
+    {
+        "id": 2,
+        "title": "Standard",
+        "price": "150",
+        "seatNr": 1,
+        "accessWifi": true,
+        "accessFoodWater": false,
+        "color": "blue-700"
+    },
+    {
+        "id": 3,
+        "title": "Premium",
+        "price": "200",
+        "seatNr": 2,
+        "accessWifi": true,
+        "accessFoodWater": true,
+        "color": "red-700"
+    }
+]

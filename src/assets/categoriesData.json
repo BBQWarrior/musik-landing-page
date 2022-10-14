@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "icon": "icon",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum iure similique.",
+        "colorActive": "bg-blue-800",
+        "colorBasic": "bg-blue-500"
+    },
+    {
+        "id": 2,
+        "icon": "icon",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum iure similique.",
+        "colorActive": "bg-yellow-800",
+        "colorBasic": "bg-yellow-300"
+    },
+    {
+        "id": 3,
+        "icon": "icon",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum iure similique.",
+        "colorActive": "bg-red-800",
+        "colorBasic": "bg-red-300"
+    },
+    {
+        "id": 4,
+        "icon": "icon",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum iure similique.",
+        "colorActive": "bg-cyan-800",
+        "colorBasic": "bg-cyan-300"
+    },
+    {
+        "id": 5,
+        "icon": "icon",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum iure similique.",
+        "colorActive": "bg-green-800",
+        "colorBasic": "bg-green-300"
+    },
+    {
+        "id": 6,
+        "icon": "icon",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum iure similique.",
+        "colorActive": "bg-orange-800",
+        "colorBasic": "bg-orange-300"
+    },
+    {
+        "id": 7,
+        "icon": "icon",
+        "title": "Lorem",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum iure similique.",
+        "colorActive": "bg-pink-800",
+        "colorBasic": "bg-pink-300"
+    }
+]
