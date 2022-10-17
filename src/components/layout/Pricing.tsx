@@ -5,7 +5,7 @@ const Pricing: React.FC = () => {
     return(
         <div className=" w-full flex flex-col gap-16 m-auto mb-20 ">
             <h2 className="  font-bold font-montserrat text-4xl m-auto">Choose a Tier that's right for you</h2>
-            <div className=" flex flex-row justify-center gap-5 mt-12">
+            <div className=" flex flex-col lg:flex-row m-auto justify-center gap-5 mt-12">
                 {
                     Data.map( data =>{
                         return(

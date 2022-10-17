@@ -21,7 +21,6 @@ const CategoryCard: React.FC<Props> = ({
 }) => {
     const activeClass = active === true ? `text-white ${colorActive}` : `text-black ${colorBasic}`;
 
-    console.log(active);
     return (
         <div className={`w-72 h-72 shadow-md shadow-black rounded-3xl mb-8 flex flex-col justify-center items-start pt-14 pl-6 pb-10 ${activeClass }`}>
             <h1 className="mb-5"> {id} </h1>
