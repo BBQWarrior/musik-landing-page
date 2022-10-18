@@ -11,14 +11,12 @@ const Categories: React.FC = () => {
         {Data.map((item) => {
           console.log(item);
           return (
-            <div className={``} key={item.id}>
+            <div className={``} key={item.id} /*onClick={() => handleOnClick(item.id)}*/>
               <CategoryCard
                 id={item.id}
                 icon={item.icon}
                 title={item.title}
                 description={item.description}
-                colorActive={item.colorActive}
-                colorBasic={item.colorBasic}
               />
             </div>
           );

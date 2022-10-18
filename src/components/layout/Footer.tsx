@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
             <div className=" w-4/5 m-auto flex flex-col xl:flex-row item-start justify-around">
                 <div className="  flex flex-col items-start justify-start">
                     <img className=" w-32 py-10 " src={Logo} alt="logo" />
-                    <ul className=" flex flex-row justify-between">
+                    <ul className=" flex flex-row justify-between flex-wrap">
                         <Button textFont="semibold" custom="pl-0">HOME</Button>
                         <Button textFont="semibold">COMPANY</Button>   
                         <Button textFont="semibold">BLOG</Button>
