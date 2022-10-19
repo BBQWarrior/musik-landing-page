@@ -1,19 +1,19 @@
 import { useState } from 'react'
  
-type ActiveType = true | false;
-
 interface Props {
   id: number;
   icon: React.ReactNode;
   title: string;
   description: string;
+  rounded: string;
 }
 
 const CategoryCard: React.FC<Props> = ({
   id,
   icon,
   title,
-  description
+  description,
+  rounded
 }) => {
   //const activeClass = active === true ? `text-white ${colorActive}` : `text-black ${colorBasic}`;
   const [isHovering, setIsHovering] = useState(false);
@@ -23,6 +23,8 @@ const CategoryCard: React.FC<Props> = ({
   const color = colors[id];
   const basicClass = color[1] + ' text-black';
   const activeClass = color[0] + ' text-white';
+
+  const roundedClass = rounded;
 
   const handleMouseOver = () => {
     setIsHovering(true);
@@ -34,7 +36,7 @@ const CategoryCard: React.FC<Props> = ({
 
   return (
     <div
-      className={`w-72 h-72 shadow-md shadow-black rounded-3xl mb-8 flex flex-col justify-center items-start pt-14 pl-6 pb-10 text-black hover:text-white ${isHovering ? activeClass : basicClass}`}
+      className={`w-72 h-72 shadow-md shadow-black rounded-3xl mb-8 flex flex-col justify-center items-start pt-14 pl-6 pb-10 text-black hover:text-white ${isHovering ? activeClass : basicClass} ${roundedClass}`}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >

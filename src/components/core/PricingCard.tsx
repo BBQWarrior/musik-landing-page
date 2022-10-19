@@ -7,7 +7,6 @@ interface Props{
     seatNr: number;
     accessWifi: boolean;
     accessFoodWater: boolean;
-    color: string;
 }
 
 const PricingCard: React.FC<Props> = ({
@@ -17,10 +16,12 @@ const PricingCard: React.FC<Props> = ({
     seatNr,
     accessWifi,
     accessFoodWater,
-    color
 }) => {
-    const colorBorderClass = "border-" + color;
-    const colorTextClass = "text-" + color;
+    const colors = [["border-black-700", "text-black-700"], ["border-blue-700", "text-blue-700"], ["border-red-700", "text-red-700"]];
+    const color = colors[id];
+    const colorBorderClass = color[0];
+    const colorTextClass = color[1];
+    
     const accessWifiClass = accessWifi === true  ? "" : "opacity-50" ;
     const accessFoodWaterClass = accessFoodWater === true ? "" : "opacity-50";
     const seatNrText = seatNr === 1 ? " Seat Available" : " Seats Availavle";
@@ -32,7 +33,7 @@ const PricingCard: React.FC<Props> = ({
             <p className=" font-normal">{seatNr}{seatNrText}</p>
             <p className={` font-normal text-base ${accessWifiClass}`}>Access to Wifi Router</p>
             <p className={` font-normal text-base ${accessFoodWaterClass}`}>Free food & coffee</p>
-            <Button textFont="bold" variant="rounded" padding="big" custom="bg-blue-700 text-white">Get Tickets</Button>
+            <Button textFont="bold" variant="rounded" padding="big" custom="border-blue-700 border bg-white text-blue-700 hover:bg-blue-700 hover:text-white">Get Tickets</Button>
         </div>
     );
 }

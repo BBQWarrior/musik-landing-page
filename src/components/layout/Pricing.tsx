@@ -10,7 +10,7 @@ const Pricing: React.FC = () => {
                     Data.map( data =>{
                         return(
                             <div key={data.id}>
-                                <PricingCard id={data.id} title={data.title} price={data.price} seatNr={data.seatNr} accessWifi={data.accessWifi} accessFoodWater={data.accessFoodWater} color={data.color}/>
+                                <PricingCard id={data.id} title={data.title} price={data.price} seatNr={data.seatNr} accessWifi={data.accessWifi} accessFoodWater={data.accessFoodWater}/>
                             </div>
                         )
                     })
