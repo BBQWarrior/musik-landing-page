@@ -17,7 +17,7 @@ const PricingCard: React.FC<Props> = ({
     accessWifi,
     accessFoodWater,
 }) => {
-    const colors = [["border-black-700", "text-black-700"], ["border-blue-700", "text-blue-700"], ["border-red-700", "text-red-700"]];
+    const colors = [["border-black", "text-black"], ["border-blue-700", "text-blue-700"], ["border-red-700", "text-red-700"]];
     const color = colors[id];
     const colorBorderClass = color[0];
     const colorTextClass = color[1];
